@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #85ffdc, #7bfcdd, #5ef3e0, #22e6e5, #00d5ea, #00c1ed, #00acec, #0097e6, #0085dc, #3179d3, #3c74cf);
+}
+
+.container-custom {
+    height: 100vh !important;
+}
+
+.img-span {
+    width: 100%;
+    grid-row: 1/span 1;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 111px;
+    height: 111px;
+    transform: translate(50%, 50%);
+}
+
+.login-div {
+    position: relative;
+    height: 35em;
+    top: 22%;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: saturate(155%) blur(43px);
+    left: 40%;
+    width: 30em;
+    border-radius: 12px 12px 12px 12px;
+    display: grid;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 100%;
+}
+
+.login-input-section {
+    grid-row: 1/span 1;
+    margin: 0 auto;
+    display: inline-grid;
+    grid-template-rows: 50% 25% 25%;
+    grid-template-columns: 100%;
+}
+
+.login-button-section {
+    grid-row: 2/span 1;
+    margin: 0 auto;
+}
+
+.username-span {
+    display: block;
+    grid-column: 1/span1;
+    grid-row: 2/span1;
+}
+
+.password-span {
+    display: block;
+    grid-column: 1/span1;
+    grid-row: 3/span1;
+}
+
+.username, .password {
+    border: none;
+    border-top: none;
+    border-bottom: 2px solid;
+    height: 4vh;
+    background: none;
+    font-family: 'Roboto';
+}
+
+.username:focus, .password:focus {
+    transform: scale(1.5);
+    background-color:none;
+    outline: #85ffdc;
+    border-bottom: 2px solid;
+}
+
+.username:focus::placeholder, .password:focus::placeholder {
+    color: transparent;
+}
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .log-div {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+.search-div {
+    display: grid;
+    width: inherit;
+    height: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.2fr 3fr;
+}
+
+.custom-nav {
+    background: rgb(2,0,36) !important;
+    background:linear-gradient( 
+        108deg, rgb(252 253 255) 0%, rgb(83 196 236) 35%, rgb(50 120 210) 100%) !important;
+    border-radius: 12px 12px 12px 12px;
+        width: 90vw;
+    margin: 0 auto;
+}
+
+.search-section {
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
+}
+
+.search-bar-section {
+    grid-row:2/span 1;
+    grid-column: 1/span 1;
+}
